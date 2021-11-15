@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import Header from "./Header";
+import Title from "./Title";
 
 type Props = {
   children: ReactNode;
@@ -7,6 +8,7 @@ type Props = {
 
 const Layout: React.FC<Props> = (props) => (
   <div>
+    <Title/>
     <Header />
     <div className="layout">{props.children}</div>
     <style jsx global>{`
@@ -33,6 +35,10 @@ const Layout: React.FC<Props> = (props) => (
       input,
       textarea {
         font-size: 16px;
+      }
+
+      .testing {
+        text-align: center;
       }
 
       button {
