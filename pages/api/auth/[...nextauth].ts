@@ -9,15 +9,15 @@ import prisma from '../../../lib/prisma';
 
 const options = {
   providers: [
-    Providers.GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-      // scope: "read:user"
-    }),
+    // Providers.GitHub({
+    //   clientId: process.env.GITHUB_ID,
+    //   clientSecret: process.env.GITHUB_SECRET,
+    //   // scope: "read:user"
+    // }),
     
     Providers.Facebook({
-      clientId: '413274143616560',
-      clientSecret: '3da8ed30f842bbe0a0d4a6e9deadcf11',
+      clientId: process.env.FACEBOOK_ID,
+      clientSecret: process.env.FACEBOOK_SECRET,
       // red
   })
   ],
